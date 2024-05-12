@@ -2,7 +2,10 @@ import MiniCssExtractPlugin from "mini-css-extract-plugin";
 import webpack from "webpack";
 import { IBuildOptions } from "./types/config";
 
-export function buildLoaders({ isDev }: IBuildOptions): webpack.RuleSetRule[] {
+export function buildLoaders({
+  isDev,
+  paths,
+}: IBuildOptions): webpack.RuleSetRule[] {
   /**
    * В отдельную переменную, т.к. важен порядок лоадеров,
    * и было явно видно в каком порядке идут лоадеры.

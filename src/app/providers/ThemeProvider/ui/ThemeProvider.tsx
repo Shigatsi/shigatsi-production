@@ -1,5 +1,5 @@
 import React, { useMemo, useState, FC, ReactElement, ReactNode } from "react";
-import { LOCAL_STORAGE_THEME_KEY, Theme, ThemeContext } from "./ThemeContext";
+import { LOCAL_STORAGE_THEME_KEY, Theme, ThemeContext } from "shared/config/theme/ThemeContext";
 //TODO: use user system theme
 //for access to user theme
 const darkModePreference = window.matchMedia("(prefers-color-scheme: dark)");
