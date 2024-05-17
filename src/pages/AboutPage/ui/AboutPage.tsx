@@ -1,5 +1,5 @@
 const AboutPage = (): JSX.Element => {
-  return <div>AboutPage</div>;
+  return <div>ABOUT PAGE!</div>;
 };
 
 export default AboutPage;
