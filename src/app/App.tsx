@@ -8,6 +8,7 @@ import { Suspense } from "react";
 import { classNames } from "shared/helpers";
 import { useTheme } from "shared/config/theme";
 import { AppRouterProvider } from "app/providers/RouterProvider";
+import { Navbar } from "widgets";
 //theme в модель перенести
 
 const App = () => {
@@ -16,8 +17,7 @@ const App = () => {
   return (
     <div className={classNames("app", {}, [theme])}>
       <button onClick={toggleTheme}>switch theme</button>
-      <Link to={"/"}>На главную</Link>
-      <Link to={"/about"}>О сайте</Link>
+      <Navbar />
       <AppRouterProvider />
     </div>
   );
