@@ -2,6 +2,7 @@
 @import "../typography.scss";
 
 :root {
+  //Fonts
   --font-family: "Roboto", Arial, sans-serif;
 
   --font-size-s: 8px;
@@ -15,4 +16,8 @@
   --font-size-l: 24px;
   --line-height-l: 32px;
   --font-l: var(--font-size-l) / var(--line-height-l) var(--font-family);
+
+  //Sizes
+
+  --navbar-height: 64px;
 }
