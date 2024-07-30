@@ -1,6 +1,9 @@
 import { classNames } from "shared/helpers";
 import cls from "./Navbar.module.scss";
-import { AppLink, AppLinkTheme, AppSwitcher } from "shared/ui";
+import { AppLink, AppLinkTheme } from "shared/ui";
+import { AppSwitcher } from "shared/ui/AppSwitcher";
+import { ChangeEvent } from "react";
+import { ThemeSwitcher } from "widgets/ThemeSwitcher/ui/ThemeSwitcher";
 
 interface INavbar {
   className?: string;
@@ -21,7 +24,7 @@ export const Navbar = ({ className }: INavbar) => {
           О сайте
         </AppLink>
       </div>
-      <AppSwitcher />
+      <ThemeSwitcher />
     </div>
   );
 };

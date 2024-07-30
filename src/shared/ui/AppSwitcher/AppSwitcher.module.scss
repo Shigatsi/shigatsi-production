@@ -1,0 +1,73 @@
+.AppSwitcher {
+  display: flex;
+  grid-column: 1 / span 2;
+  align-items: center;
+
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 24px;
+    height: 14px;
+  }
+  .switch__checkbox {
+    height: 0;
+    width: 0;
+    opacity: 0;
+  }
+
+  //свойства фона в переключателе
+  .switch__btn {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #3d4454;
+    transition: 0.2s ease-in-out;
+    border-radius: 20px;
+  }
+
+  //свойства бегунка в переключателе
+  .switch__btn::before {
+    position: absolute;
+    content: "";
+    top: 1px;
+    left: 1px;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    transition: 0.2s ease-in-out;
+    background-color: var(--violet-1);
+    box-shadow: 0 0 2px 0 rgba(10, 10, 10, 0.29);
+  }
+
+  .switch__checkbox:checked + .switch__btn::before {
+    transform: translateX(10px);
+  }
+  .switch__checkbox:checked + .switch__btn {
+    background-color: var(--blue-100);
+  }
+
+  .switcher__caption {
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 18px;
+    margin: 0 5px;
+  }
+}
+
+.switcher__disabled {
+  .switch__btn {
+    opacity: 0.7;
+    cursor: default;
+  }
+
+  .switch__checkbox:disabled + .switch__btn::before {
+    transform: none;
+  }
+
+  .switcher__caption {
+    opacity: 0.7;
+  }
+}
