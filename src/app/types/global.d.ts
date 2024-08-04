@@ -15,3 +15,4 @@ declare module "*.jpg";
 declare module "*.jpeg";
 declare module "*.png";
 
+declare const _IS_DEV: boolean;

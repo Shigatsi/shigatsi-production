@@ -24,7 +24,10 @@ export const Navbar = ({ className }: INavbar) => {
           О сайте
         </AppLink>
       </div>
-      <ThemeSwitcher />
+      <div className={cls.switchers}>
+        <ThemeSwitcher />
+        {/* LanguageSwitcher */}
+      </div>
     </div>
   );
 };

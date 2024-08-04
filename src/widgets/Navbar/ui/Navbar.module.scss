@@ -13,5 +13,10 @@
     margin-left: auto;
   }
 
+  .switchers {
+    display: flex;
+    align-content: center;
+    column-gap: 8px;
+  }
 
 }
