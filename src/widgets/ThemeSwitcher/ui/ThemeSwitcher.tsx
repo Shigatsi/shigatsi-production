@@ -1,7 +1,7 @@
 import React from "react";
 import { classNames } from "shared/helpers";
 import cls from "./ThemeSwitcher.module.scss";
-import { ThemeContext, useTheme, Theme } from "shared/config/theme";
+import { useTheme, Theme } from "shared/config/theme";
 
 import MoonIcon from "shared/assets/icons/MoonIcon.svg";
 import SunIcon from "shared/assets/icons/SunIcon.svg";
@@ -19,7 +19,14 @@ export const ThemeSwitcher = ({ className }: IThemeSwitcher) => {
       className={classNames(cls.ThemeSwitcher, {}, [className])}
       onClick={toggleTheme}
     >
-      {theme === Theme.DARK ? <MoonIcon /> : <SunIcon />}
+      {theme === Theme.DARK ? (
+        <SunIcon
+          stroke={theme === Theme.DARK ? "red" : "yellow"}
+          className="theme_icon"
+        />
+      ) : (
+        <MoonIcon className={cls.theme_icon } />
+      )}
     </AppButton>
   );
 };

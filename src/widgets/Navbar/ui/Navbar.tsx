@@ -4,29 +4,33 @@ import { AppLink, AppLinkTheme } from "shared/ui";
 import { AppSwitcher } from "shared/ui/AppSwitcher";
 import { ChangeEvent } from "react";
 import { ThemeSwitcher } from "widgets/ThemeSwitcher/ui/ThemeSwitcher";
+import { LangSwitcher } from "widgets/LangSwitcher/LangSwitcher";
+import { useTranslation } from "react-i18next";
 
 interface INavbar {
   className?: string;
 }
 
 export const Navbar = ({ className }: INavbar) => {
+  const { t } = useTranslation("translation");
+
   return (
     <div className={classNames(cls.navbar, {}, [className])}>
       <div className={cls.links}>
         <AppLink className={cls.link} to={"/"}>
-          На главную
+          {t("Main")}
         </AppLink>
         <AppLink
           className={cls.link}
           to={"/about"}
           theme={AppLinkTheme.SECONDARY}
         >
-          О сайте
+          {t("About")}
         </AppLink>
       </div>
       <div className={cls.switchers}>
         <ThemeSwitcher />
-        {/* LanguageSwitcher */}
+        <LangSwitcher />
       </div>
     </div>
   );
