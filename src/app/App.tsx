@@ -10,23 +10,21 @@ import { useTheme } from "shared/config/theme";
 import { AppRouterProvider } from "app/providers/RouterProvider";
 import { Navbar } from "widgets";
 import { Sidebar } from "widgets/Sidebar";
-import { useTranslation } from "react-i18next";
-
 
 const App = () => {
-  const { theme } = useTheme();
+    const { theme } = useTheme();
 
-  return (
-    <div className={classNames("app", {}, [theme])}>
-      <Suspense fallback="">
-        <Navbar />
-        <div className="page-content">
-          <Sidebar />
-          <AppRouterProvider />
+    return (
+        <div className={classNames("app", {}, [theme])}>
+            <Suspense fallback="">
+                <Navbar />
+                <div className="page-content">
+                    <Sidebar />
+                    <AppRouterProvider />
+                </div>
+            </Suspense>
         </div>
-      </Suspense>
-    </div>
-  );
+    );
 };
 
 export default App;

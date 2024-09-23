@@ -20,9 +20,9 @@ const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({
   );
 
   return (
-    <ThemeContext.Provider value={defaultProps}>
-      {children}
-    </ThemeContext.Provider>
+      <ThemeContext.Provider value={defaultProps}>
+          {children}
+      </ThemeContext.Provider>
   );
 };
 

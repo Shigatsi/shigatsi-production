@@ -1,0 +1,15 @@
+﻿# Корневой файл EditorConfig
+root = true
+
+# Для всех файлов используем unix-совместимые переносы строк
+[*]
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+indent_style = space
+indent_size = 4
+
+# Только для файлов .json или
+[*.{json, md}]
+indent_style = space
+indent_size = 2

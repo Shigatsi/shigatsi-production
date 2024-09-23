@@ -1,4 +1,3 @@
-import path from "path";
 import webpack from "webpack";
 import HtmlWebpackPlugin from "html-webpack-plugin";
 import { IBuildOptions } from "./types/config";
@@ -20,5 +19,6 @@ export function buildPlugins({
     new webpack.DefinePlugin({
       _IS_DEV: JSON.stringify(isDev),
     }),
+    new webpack.HotModuleReplacementPlugin(),
   ];
 }
