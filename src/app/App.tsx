@@ -3,15 +3,22 @@ import { Link } from "react-router-dom";
 
 import { AboutPage } from "pages/AboutPage";
 import { MainPage } from "pages/MainPage";
-import { Suspense } from "react";
+import {
+    createContext,
+    Suspense,
+    useCallback,
+    useContext,
+    useState,
+} from "react";
 
 import { classNames } from "shared/helpers";
-import { useTheme } from "shared/config/theme";
+import { Theme, useTheme } from "shared/config/theme";
 import { AppRouterProvider } from "app/providers/RouterProvider";
 import { Navbar } from "widgets";
 import { Sidebar } from "widgets/Sidebar";
 
 const App = () => {
+
     const { theme } = useTheme();
 
     return (

@@ -1,29 +1,27 @@
-import React, { useMemo, useState, FC, ReactElement, ReactNode } from "react";
-import { LOCAL_STORAGE_THEME_KEY, Theme, ThemeContext } from "shared/config/theme/ThemeContext";
+import React, { useState, useCallback } from "react";
+import { useTheme } from "shared/config/theme";
+import {
+    LOCAL_STORAGE_THEME_KEY,
+    Theme,
+    ThemeContext,
+} from "shared/config/theme/ThemeContext";
+import { ThemeSwitcherContext } from "shared/config/theme/ThemeSwitchContext";
 //TODO: use user system theme
 //for access to user theme
-const darkModePreference = window.matchMedia("(prefers-color-scheme: dark)");
+// const darkModePreference = window.matchMedia("(prefers-color-scheme: dark)");
 
-const defaultTheme =
-  (localStorage.getItem(LOCAL_STORAGE_THEME_KEY) as Theme) || Theme.DARK;
-
-const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({
-  children,
+export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({
+    children,
 }) => {
-  const [theme, setTheme] = useState<Theme>(defaultTheme);
+    const { theme, switchTheme } = useTheme();
+    const darkModePreference = window.matchMedia("(prefers-color-scheme: dark)");
+    console.log('darkModePreference', darkModePreference)
 
-
-
-  const defaultProps = useMemo(
-    () => ({ theme: theme, setTheme: setTheme }),
-    [theme]
-  );
-
-  return (
-      <ThemeContext.Provider value={defaultProps}>
-          {children}
-      </ThemeContext.Provider>
-  );
+    return (
+        <ThemeContext.Provider value={{ theme }}>
+            <ThemeSwitcherContext.Provider value={{ switchTheme }}>
+                {children}
+            </ThemeSwitcherContext.Provider>
+        </ThemeContext.Provider>
+    );
 };
-
-export default ThemeProvider;
