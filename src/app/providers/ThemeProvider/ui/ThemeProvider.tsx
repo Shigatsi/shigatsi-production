@@ -1,5 +1,4 @@
 import React, { useState, useCallback } from "react";
-import { useTheme } from "shared/config/theme";
 import {
     LOCAL_STORAGE_THEME_KEY,
     Theme,
@@ -13,10 +12,13 @@ import { ThemeSwitcherContext } from "shared/config/theme/ThemeSwitchContext";
 export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({
     children,
 }) => {
-    const { theme, switchTheme } = useTheme();
-    const darkModePreference = window.matchMedia("(prefers-color-scheme: dark)");
-    console.log('darkModePreference', darkModePreference)
+    const [theme, setTheme] = useState<Theme>(Theme.DARK);
 
+    const switchTheme = useCallback(() => {
+        const newTheme = theme === Theme.DARK ? Theme.LIGHT : Theme.DARK;
+        setTheme(newTheme);
+        localStorage.setItem(LOCAL_STORAGE_THEME_KEY, newTheme);
+    }, []);
     return (
         <ThemeContext.Provider value={{ theme }}>
             <ThemeSwitcherContext.Provider value={{ switchTheme }}>
