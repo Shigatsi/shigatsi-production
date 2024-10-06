@@ -15,6 +15,7 @@ export default [
             "react/jsx-indent": ["warn", 4],
             "@typescript-eslint/no-unused-vars": ["warn"],
         },
-        ignores: ["node_modules/*", ".git/*",  "public/*", "build/*"],
+        ignores: ["node_modules/*", ".git/*", "public/*", "build/*"],
+        extends: ["plugin:react-hooks/recommended"],
     },
 ];
