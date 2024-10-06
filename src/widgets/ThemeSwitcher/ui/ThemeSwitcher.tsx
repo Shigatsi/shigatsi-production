@@ -21,7 +21,6 @@ export const ThemeSwitcher = ({ className }: IThemeSwitcher) => {
         >
             {theme === Theme.DARK ? (
                 <SunIcon
-                    stroke={theme === Theme.DARK ? "red" : "yellow"}
                     className="theme_icon"
                 />
             ) : (
