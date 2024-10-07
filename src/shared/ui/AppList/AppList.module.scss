@@ -1,3 +1,10 @@
+@import "src/app/styles/themes/dark.scss";
+@import "src/app/styles/themes/light.scss";
+
+body {
+    --primary-color: rgba(31, 122, 140, 1);
+}
+
 .ListboxButton {
     cursor: pointer;
     color: var(--primary-color);
@@ -7,11 +14,11 @@
 //     background-color: red;
 // }
 
-.ListboxOptions {
+.ListboxOption {
     // width: 100%;
     //Не поддерживает переменные цветаы, работает на кнопке
     background-color: var(--inverted-bg-color);
-    color: red;
+    color: green;
     border: 1px solid var(--inverted-primary-color);
     // background-color: green;
 }

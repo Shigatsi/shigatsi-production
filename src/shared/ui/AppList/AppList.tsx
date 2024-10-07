@@ -55,7 +55,7 @@ export const AppList = ({
                     <ListboxOption
                         key={option.id}
                         value={option}
-                        className="data-[focus]:bg-blue-100"
+                        className={cls.ListboxOption}
                     >
                         {option.name}
                     </ListboxOption>
