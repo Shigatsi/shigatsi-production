@@ -1,0 +1,24 @@
+.ListboxButton {
+    cursor: pointer;
+    color: var(--primary-color);
+}
+
+// .ListboxButton {
+//     background-color: red;
+// }
+
+.ListboxOptions {
+    // width: 100%;
+    //Не поддерживает переменные цветаы, работает на кнопке
+    background-color: var(--inverted-bg-color);
+    color: red;
+    border: 1px solid var(--inverted-primary-color);
+    // background-color: green;
+}
+
+// .clear {
+//     padding: 0;
+//     background-color: red;
+//     outline: none;
+//     border: none;
+// }
