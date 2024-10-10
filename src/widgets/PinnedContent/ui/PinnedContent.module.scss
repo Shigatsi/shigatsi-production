@@ -1,0 +1,11 @@
+.pinned {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+
+    &__header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
