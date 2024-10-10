@@ -4,6 +4,7 @@ import { MainPage } from "pages/MainPage";
 import { NotesPage } from "pages/NotesPage";
 import { HabitsPage } from "pages/HabitsPage";
 import { TagsPage } from "pages/TagsPage";
+import { SettingsPage } from "pages/SettingsPage";
 
 enum AppRoutes {
     MAIN = "main",
@@ -11,6 +12,7 @@ enum AppRoutes {
     NOTES = "notes",
     TAGS = "tags",
     HABITS = "habits",
+    SETTINGS = "settings"
 }
 
 const RoutePath: Record<AppRoutes, string> = {
@@ -19,6 +21,7 @@ const RoutePath: Record<AppRoutes, string> = {
     [AppRoutes.NOTES]: "/notes",
     [AppRoutes.HABITS]: "/habits",
     [AppRoutes.TAGS]: "/tags",
+    [AppRoutes.SETTINGS]: "/settings"
 };
 
 export const routeConfig: Record<AppRoutes, RouteProps> = {
@@ -42,4 +45,8 @@ export const routeConfig: Record<AppRoutes, RouteProps> = {
         path: RoutePath.tags,
         element: <TagsPage />,
     },
+    [AppRoutes.SETTINGS]: {
+        path: RoutePath.settings,
+        element: <SettingsPage/>
+    }
 };

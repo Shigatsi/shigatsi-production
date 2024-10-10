@@ -46,6 +46,13 @@ export const Navbar = ({ className }: INavbar) => {
                 >
                     {t("Tags")}
                 </AppLink>
+                <AppLink
+                    className={cls.link}
+                    to={"/settings"}
+                    theme={AppLinkTheme.SECONDARY}
+                >
+                    {t("Settings")}
+                </AppLink>
             </div>
             <div className={cls.switchers}>
                 <ThemeSwitcher />
