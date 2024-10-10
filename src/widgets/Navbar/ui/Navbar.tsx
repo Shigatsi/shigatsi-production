@@ -1,6 +1,6 @@
 import { classNames } from "shared/helpers";
 import cls from "./Navbar.module.scss";
-import { AppLink, AppLinkTheme } from "shared/ui";
+import { AppButton, AppLink, AppLinkTheme } from "shared/ui";
 import { ThemeSwitcher } from "widgets/ThemeSwitcher/ui/ThemeSwitcher";
 import { LangSwitcher } from "widgets/LangSwitcher/LangSwitcher";
 import { useTranslation } from "react-i18next";
@@ -55,8 +55,8 @@ export const Navbar = ({ className }: INavbar) => {
                 </AppLink>
             </div>
             <div className={cls.switchers}>
-                <ThemeSwitcher />
-                <LangSwitcher />
+
+                <AppButton>{t("Log out")}</AppButton>
             </div>
         </div>
     );
