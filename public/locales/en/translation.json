@@ -1,4 +1,9 @@
 {
- "Main": "Main", 
- "About": "About"
+  "Main": "Main",
+  "About": "About",
+  "Habits": "Habits",
+  "Settings": "Settings",
+  "Notes": "Notes",
+  "Log out": "Log out",
+  "Tags": "Tags"
 }
