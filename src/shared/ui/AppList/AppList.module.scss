@@ -15,8 +15,7 @@ body {
 // }
 
 .ListboxOption {
-    // width: 100%;
-    //Не поддерживает переменные цветаы, работает на кнопке
+    width: 208px;
     background-color: var(--inverted-bg-color);
     color: green;
     border: 1px solid var(--inverted-primary-color);

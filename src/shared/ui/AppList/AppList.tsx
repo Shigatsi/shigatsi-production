@@ -8,6 +8,7 @@ import { useState } from "react";
 import { classNames } from "shared/helpers";
 import cls from "./AppList.module.scss";
 
+
 export enum AppListTheme {
     CLEAR = "clear",
 }
