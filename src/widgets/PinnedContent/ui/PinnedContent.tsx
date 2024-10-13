@@ -5,7 +5,7 @@ import { AppButton } from "shared/ui";
 
 interface IPinnedContent {
     title: string;
-    data: any[];
+    data: React.ReactNode[];
     className?: string;
 }
 
