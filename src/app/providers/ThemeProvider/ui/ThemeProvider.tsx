@@ -18,7 +18,8 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({
         const newTheme = theme === Theme.DARK ? Theme.LIGHT : Theme.DARK;
         setTheme(newTheme);
         localStorage.setItem(LOCAL_STORAGE_THEME_KEY, newTheme);
-    }, []);
+    }, [theme]);
+
     return (
         <ThemeContext.Provider value={{ theme }}>
             <ThemeSwitcherContext.Provider value={{ switchTheme }}>
