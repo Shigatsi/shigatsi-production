@@ -1,0 +1,56 @@
+{
+  "title": "Sobre el proyecto",
+  "description": "Es una aplicación de notas con listas de tareas y seguimiento de hábitos. Puedes agrupar entradas por temas, conectarlas, marcar lo importante y hacer seguimiento. La interfaz está inspirada en la calma de un bosque de coníferas: minimalista, acogedora, con temas claros y oscuros.",
+  "featuresTitle": "Características",
+  "features": [
+    "Etiquetas y categorías",
+    "Listas de tareas y seguimiento de hábitos",
+    "Búsqueda y conexiones entre notas",
+    "Cambio de tema e idioma",
+    "Localización: español, ruso, inglés"
+  ],
+  "stackTitle": "Stack tecnológico",
+  "stack": {
+    "react": "React",
+    "ts": "TypeScript",
+    "redux": "Redux Toolkit",
+    "fsd": "Feature-Sliced Design (FSD)",
+    "webpack": "Webpack",
+    "scss": "SCSS модули",
+    "i18n": "i18next (react-i18next)",
+    "json": "json-server (заглушка API)"
+  },
+  "timelineTitle": "Etapas de desarrollo",
+  "timeline": {
+    "idea": {
+      "title": "1. Idea y bocetos",
+      "text": "Concepto, ejemplos, estructura de la app.",
+      "status": "done"
+    },
+    "setup": {
+      "title": "2. Configuración inicial",
+      "text": "Build, arquitectura, rutas, temas, localización.",
+      "status": "done"
+    },
+    "ui": {
+      "title": "3. Interfaz y páginas",
+      "text": "Notas, tareas, hábitos, ajustes.",
+      "status": "current"
+    },
+    "data": {
+      "title": "4. Capa de datos",
+      "text": "json-server, visualización y edición.",
+      "status": "planned"
+    },
+    "features": {
+      "title": "5. Funciones adicionales",
+      "text": "Etiquetas, filtros, enlaces entre notas.",
+      "status": "planned"
+    },
+    "final": {
+      "title": "6. Acabado final",
+      "text": "Refactorización, optimización, build final.",
+      "status": "planned"
+    }
+  }
+}

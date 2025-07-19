@@ -4,21 +4,31 @@
 @import "./themes/light.scss";
 
 .app {
-  font: var(--font-m);
-  display: flex;
-  flex-direction: column;
+    font: var(--font-m);
+    display: flex;
+    flex-direction: column;
 
-  background-color: var(--bg-color);
-  color: var(--primary-color);
+    background-color: var(--bg-color);
+    color: var(--primary-color);
 
-  min-height: 100vh;
+    min-height: 100vh;
 }
 
 .page-content {
-  display: flex;
+    display: flex;
 }
 
 .page-wrapper {
-  flex-grow: 1;
-  padding: 16px;
+    flex-grow: 1;
+    padding: 16px;
+}
+
+.reset-ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.reset-li {
+    margin: 0;
+    padding: 0;
 }

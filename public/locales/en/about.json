@@ -1,3 +1,57 @@
 {
-  "ABOUT PAGE": "ABOUT PAGE"
+  "ABOUT PAGE": "ABOUT PAGE",
+  "title": "About the project",
+  "description": "This is a note-taking app with to-dos and habit tracking. You can group entries by topics, connect them, mark important things, and track your routines. The interface is inspired by the calm of a coniferous forest — minimal and cozy, with light and dark themes.",
+  "featuresTitle": "Features",
+  "features": [
+    "Tags and categories",
+    "To-do lists and habit tracking",
+    "Search and connections between notes",
+    "Theme and language switcher",
+    "Localization: English, Russian, Spanish"
+  ],
+  "stackTitle": "Tech stack",
+  "stack": {
+    "react": "React ",
+    "ts": "TypeScript",
+    "redux": "Redux Toolkit",
+    "fsd": "Feature-Sliced Design (FSD)",
+    "webpack": "Webpack",
+    "scss": "SCSS modules",
+    "i18n": "i18next (react-i18next)",
+    "json": "json-server mock API)"
+  },
+  "timelineTitle": "Development stages",
+  "timeline": {
+    "idea": {
+      "title": "1. Idea and sketches",
+      "text": "Concept, examples, app structure.",
+      "status": "done"
+    },
+    "setup": {
+      "title": "2. Basic setup",
+      "text": "Build, architecture, routing, themes, localization.",
+      "status": "done"
+    },
+    "ui": {
+      "title": "3. UI and pages",
+      "text": "Notes, tasks, habits, settings.",
+      "status": "current"
+    },
+    "data": {
+      "title": "4. Data layer",
+      "text": "json-server, rendering and editing.",
+      "status": "planned"
+    },
+    "features": {
+      "title": "5. Additional features",
+      "text": "Tags, filtering, cross-note links.",
+      "status": "planned"
+    },
+    "final": {
+      "title": "6. Final polish",
+      "text": "Refactoring, optimization, production build.",
+      "status": "planned"
+    }
+  }
 }

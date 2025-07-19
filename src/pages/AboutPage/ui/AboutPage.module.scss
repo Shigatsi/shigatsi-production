@@ -1,0 +1,12 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+
+    .about__item {
+        display: flex;
+        align-items: center;
+        column-gap: 16px;
+        color: var(--secondary-color);
+    }
+}

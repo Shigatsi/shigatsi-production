@@ -1,10 +1,27 @@
 .app.light {
-    --bg-color: rgba(204, 197, 185, 1);
-    --inverted-bg-color: rgba(2, 43, 58, 1);
+    //     --bg-color: rgba(204, 197, 185, 1);
+    //     --inverted-bg-color: rgba(2, 43, 58, 1);
 
-    --primary-color: rgba( 64, 61, 57, 1);
-    --secondary-color: rgba( 255, 252, 242, 1);
+    //     --primary-color: rgba( 64, 61, 57, 1);
+    //     --secondary-color: rgba( 255, 252, 242, 1);
 
-    --inverted-primary-color: rgba(31, 122, 140, 1);
-    --inverted-secondary-color: rgba(191, 219, 247, 1);
+    //     --inverted-primary-color: rgba(31, 122, 140, 1);
+    //     --inverted-secondary-color: rgba(191, 219, 247, 1);
+    --bg-color: rgba(230, 228, 220, 1);
+    --inverted-bg-color: rgba(22, 30, 26, 1);
+    --primary-color: rgba(67, 103, 91, 1);
+    --secondary-color: rgba(177, 200, 181, 1);
+
+    --inverted-primary-color: rgba(120, 120, 115, 1);
+    --inverted-secondary-color: rgba(38, 44, 38, 1);
+
+    --accent-main: rgba(223, 153, 58, 1);
+    --accent-hover: rgba(238, 166, 96, 1);
+    --accent-muted: rgba(134, 176, 139, 1);
+    --accent-berry: rgba(157, 71, 85, 1);
+    --accent-fog: rgba(107, 134, 161, 1);
+
+    --success-color: var(--accent-muted);
+    --error-color: var(--accent-berry);
+    --link-color: var(--accent-fog);
 }

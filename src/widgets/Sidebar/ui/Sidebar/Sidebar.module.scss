@@ -4,6 +4,9 @@
   background-color: var(--bg-color);
   border-right: 1px solid var(--inverted-bg-color);
   transition: width 1s ease-out;
+  display: flex;
+  align-items: flex-start;
+  flex-shrink: 0;
 }
 
 .collapsed {
