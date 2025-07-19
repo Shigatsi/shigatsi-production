@@ -1,5 +1,11 @@
 import { useTranslation } from "react-i18next";
-import { FaReact, FaSass, FaCheck, FaLongArrowAltRight } from "react-icons/fa";
+import {
+    FaReact,
+    FaSass,
+    FaCheck,
+    FaLongArrowAltRight,
+    FaArrowCircleRight,
+} from "react-icons/fa";
 import { SiTypescript, SiRedux, SiWebpack, SiI18Next } from "react-icons/si";
 import { MdSchedule } from "react-icons/md";
 import cls from "./AboutPage.module.scss";
@@ -43,8 +49,11 @@ const AboutPage = (): JSX.Element => {
                 </h2>
                 <ul className={`reset-ul ${cls.about__list}`}>
                     {features.map((el, i) => (
-                        <li className="reset-li cls__list-item" key={i}>
-                            {el}
+                        <li
+                            className={`reset-li  ${cls.about__list_item}`}
+                            key={i}
+                        >
+                            <FaArrowCircleRight /> {el}
                         </li>
                     ))}
                 </ul>

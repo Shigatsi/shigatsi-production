@@ -9,4 +9,14 @@
         column-gap: 16px;
         color: var(--secondary-color);
     }
+
+    .about__list_item {
+        display: flex;
+        align-items: center;
+        column-gap: 16px;
+    }
+
+    .about__subtitle {
+        padding-bottom: 8px;
+    }
 }
