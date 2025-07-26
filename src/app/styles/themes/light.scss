@@ -7,20 +7,17 @@
 
     //     --inverted-primary-color: rgba(31, 122, 140, 1);
     //     --inverted-secondary-color: rgba(191, 219, 247, 1);
-    --bg-color: rgba(230, 228, 220, 0.905);
-    --inverted-bg-color: rgba(22, 30, 26, 1);
-    --primary-color: rgba(67, 103, 91, 1);
-    --secondary-color: rgba(136, 169, 142, 0.836);
-
-    --inverted-primary-color: rgba(120, 120, 115, 1);
-    --inverted-secondary-color: rgba(38, 44, 38, 1);
-
-    --accent-main: rgba(223, 153, 58, 1);
-    --accent-hover: rgba(238, 166, 96, 1);
-    --accent-muted: rgba(134, 176, 139, 1);
-    --accent-berry: rgba(157, 71, 85, 1);
-    --accent-fog: rgba(107, 134, 161, 1);
-
+    --bg-color: rgb(230 228 220 / 90.5%);
+    --inverted-bg-color: rgb(22 30 26 / 100%);
+    --primary-color: rgb(67 103 91 / 100%);
+    --secondary-color: rgb(136 169 142 / 83.6%);
+    --inverted-primary-color: rgb(120 120 115 / 100%);
+    --inverted-secondary-color: rgb(38 44 38 / 100%);
+    --accent-main: rgb(223 153 58 / 100%);
+    --accent-hover: rgb(238 166 96 / 100%);
+    --accent-muted: rgb(134 176 139 / 100%);
+    --accent-berry: rgb(157 71 85 / 100%);
+    --accent-fog: rgb(107 134 161 / 100%);
     --success-color: var(--accent-muted);
     --error-color: var(--accent-berry);
     --link-color: var(--accent-fog);
